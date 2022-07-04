@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website metamovies.com</title>
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="body-pd">
+    <!--========== HEADER ==========-->
+    <header class="header" id="header">
+        <div class="header__toggle">
+            <i class='bx bx-menu' id="header-toggle"></i>
+        </div>
+        <div class="header__img">
+            <img src="assets/img/image-victor.jpg" alt="">
+        </div>
+    </header>
+    
+    <!--========== NAV ==========-->
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav__logo">
+                    <i class="bx bx-play-circle nav__logo-icon"></i>
+                    <span class="nav__logo-name">Metamovies</span>
+                </a>
+
+                <div class="nav__list">
+                    <a href="#" class="nav__link active active">
+                        <i class="bx bx-grid-alt nav__icon"></i>
+                        <span class="nav__name">Home</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class="bx bx-camera-movie nav__icon"></i>
+                        <span class="nav__name">Movies</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class="bx bx-heart nav__icon"></i>
+                        <span class="nav__name">Favorites</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class="bx bx-cog nav__icon"></i>
+                        <span class="nav__name">Settings</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="#" class="nav__link">
+                <i class="bx bx-log-out nav__icon"></i>
+                <span class="nav__name">Log out</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--========== SECTIONS ==========-->
+    <main>
+        <section class="hero section bd-container">
+            <h2 class="section-title">Home</h2>
+
+            <div class="hero__container bd-grid">
+                <div class="hero__content">
+                    <img class="hero__img" src="https://rockandfilms.es/wp-content/uploads/2020/07/IFC-The-Wretched-1024x576-1.jpg" alt="img-pelicula">
+
+                    <a href="#" class="hero__button">
+                        <i class="bx bx-play-circle"></i>
+                    </a>
+                </div>
+
+                <div class="hero__content">
+                    <img class="hero__img" src="https://laverdadnoticias.com/__export/1611240174583/sites/laverdad/img/2021/01/21/jurassic_world_dominion_serax_el_final_de_la_serie_de_pelixculas.jpg_1697240522.jpg" alt="img-pelicula">
+
+                    <a href="#" class="hero__button">
+                        <i class="bx bx-play-circle"></i>
+                    </a>
+                </div>
+                
+                <div class="hero__controls">
+                    <a href="#" class="hero__control hero__control--previous" id="btnPrevious"><i class="bx bx-left-arrow"></i></a>
+                    <a href="#" class="hero__control hero__control--next" id="btnNext"><i class="bx bx-right-arrow"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories section bd-container">
+            <h2 class="section-title">Categories</h2>
+
+            <div class="categories__container bd-grid">
+                <a href="#" class="categories__content button">Acción</a>
+                <a href="#" class="categories__content button">Terror</a>
+                <a href="#" class="categories__content button">Animación</a>
+            </div>
+        </section>
+
+        <section class="movies section bd-container" id="movies">
+            <h2 class="section-title">3940 Movies</h2>
+
+            <div class="movies__container bd-grid">
+                <div class="movies__content">
+                    <img class="movies__img" src="https://cinecalidad.com.mx/wp-content/webp-express/webp-images/uploads/2022/05/6WmTdYNoSinBAXs0AfTTCSaV5lw-691x1024.jpg.webp" />
+                    
+                    <div class="movies__data">
+                        <h3 class="movies__title">MORBIUS</h3>
+                        <p class="movies__description">2022</p>
+                    </div>
+                </div>
+                
+                <div class="movies__content">
+                    <img class="movies__img" src="https://cinecalidad.com.mx/wp-content/webp-express/webp-images/uploads/2021/04/i9ErzjpaE6BOHajCvcKx9fycemT-683x1024.jpg.webp" />
+                    
+                    <div class="movies__data">
+                        <h3 class="movies__title">MADRE OSCURA</h3>
+                        <p class="movies__description">2021</p>
+                    </div>
+                </div>
+                
+                <div class="movies__content">
+                    <img class="movies__img" src="https://es.web.img3.acsta.net/pictures/22/04/07/11/43/1839314.jpg" />
+                    
+                    <div class="movies__data">
+                        <h3 class="movies__title">DOCTOR STRANGE EN EL MULTIVERSO DE LA LOCURA</h3>
+                        <p class="movies__description">2022</p>
+                    </div>
+                </div>
+                
+                <div class="movies__content">
+                    <img class="movies__img" src="https://pics.filmaffinity.com/Bull-488921772-large.jpg" />
+                    
+                    <div class="movies__data">
+                        <h3 class="movies__title">BULL</h3>
+                        <p class="movies__description">2022</p>
+                    </div>
+                </div>
+
+                <div class="movies__content">
+                    <img class="movies__img" src="https://pics.filmaffinity.com/The_Exorcism_of_God-191471591-large.jpg" />
+                    
+                    <div class="movies__data">
+                        <h3 class="movies__title">EL EXORCISMO DE DIOS</h3>
+                        <p class="movies__description">2021</p>
+                    </div>
+                </div>
+
+                <div class="movies__content">
+                    <img class="movies__img" src="https://cinecalidad.com.mx/wp-content/webp-express/webp-images/uploads/2021/04/i9ErzjpaE6BOHajCvcKx9fycemT-683x1024.jpg.webp" />
+                    
+                    <div class="movies__data">
+                        <h3 class="movies__title">MADRE OSCURA</h3>
+                        <p class="movies__description">2021</p>
+                    </div>
+                </div>
+                
+                <div class="movies__content">
+                    <img class="movies__img" src="https://es.web.img3.acsta.net/pictures/22/04/07/11/43/1839314.jpg" />
+                    
+                    <div class="movies__data">
+                        <h3 class="movies__title">DOCTOR STRANGE EN EL MULTIVERSO DE LA LOCURA</h3>
+                        <p class="movies__description">2022</p>
+                    </div>
+                </div>
+                
+                <div class="movies__content">
+                    <img class="movies__img" src="https://pics.filmaffinity.com/Bull-488921772-large.jpg" />
+                    
+                    <div class="movies__data">
+                        <h3 class="movies__title">BULL</h3>
+                        <p class="movies__description">2022</p>
+                    </div>
+                </div>
+
+                <div class="movies__content">
+                    <img class="movies__img" src="https://pics.filmaffinity.com/The_Exorcism_of_God-191471591-large.jpg" />
+                    
+                    <div class="movies__data">
+                        <h3 class="movies__title">EL EXORCISMO DE DIOS</h3>
+                        <p class="movies__description">2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== JS ==========-->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
