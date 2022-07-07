@@ -45,37 +45,63 @@ linkColor.forEach(i => i.addEventListener('click', colorLink))
 
 
 /*========== NEXT/PREVIOUS CONTROLS ==========*/
-function previousSlides() {
-    showSlides(slideIndex -= 1)
-}
-
-function nextSlides() {
-    showSlides(slideIndex += 1)
+function controlSlider(isNext) {
+    sliderIndex = isNext ? (sliderIndex + 1) : (sliderIndex - 1)
+    showSlider(sliderIndex)
 }
 
 /*========== SHOW SLIDE ==========*/
-function showSlides(n) {
-    let heros = document.querySelectorAll('.hero__content')
+function showSlider(n) {
+    const heros = document.querySelectorAll('.hero__content')
   
-    if (n > heros.length) slideIndex = 1
+    if (n > heros.length) sliderIndex = 1
   
-    if (n < 1) slideIndex = heros.length
+    if (n < 1) sliderIndex = heros.length
   
-    heros.forEach((item) => {
-      item.classList.add('fade')
-    })
+    /* Add fade class to all heros */
+    heros.forEach((item) => item.classList.add('fade'))
   
-    heros[slideIndex-1].classList.remove('fade')
+    /* Removed fade class to current hero */
+    heros[sliderIndex-1].classList.remove('fade')
 }
   
-const previousControl = document.getElementById('btnPrevious')
-const nextControl = document.getElementById('btnNext')
-let slideIndex = 1
+let sliderIndex = 1
 
-showSlides(slideIndex)
-previousControl.addEventListener('click', () => previousSlides())
-nextControl.addEventListener('click', () => nextSlides())
+showSlider(sliderIndex)
+document.getElementById('btnPrevious').addEventListener('click', () => controlSlider(false))
+document.getElementById('btnNext').addEventListener('click', () => controlSlider(true))
 
+
+
+/*===== TOGGLE MODAL DETAIL =====*/
+const toggleModal = modalId => {
+    const modal = document.getElementById(modalId),
+    body = document.body
+    
+    if (modal && body) {
+        body.classList.toggle('stop-scrolling')
+        modal.classList.toggle('bg-active')
+    }
+}
+
+/*===== CHANGE IMAGE =====*/
+const changeImageTo = (elementoId, urlImage) => {
+    const element = document.getElementById(elementoId)
+    element.src = urlImage
+}
+
+document.querySelectorAll('.movies__content').forEach(item => item.addEventListener('click', e => {
+    urlImage = e.target.src
+
+    changeImageTo('modalDetailImg', urlImage)
+    toggleModal('modalBg')
+}))
+
+window.addEventListener('click', (e) => {
+    if (e.target == document.getElementById('modalBg')){
+        toggleModal('modalBg')
+    }
+})
 
 
 
