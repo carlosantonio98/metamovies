@@ -43,40 +43,41 @@ linkColor.forEach(i => i.addEventListener('click', colorLink))
 
 
 
-
-/*========== NEXT/PREVIOUS CONTROLS ==========*/
-function controlSlider(isNext) {
-    sliderIndex = isNext ? (sliderIndex + 1) : (sliderIndex - 1)
+if (document.querySelectorAll('.hero__content').length > 0) {
+    /*========== NEXT/PREVIOUS CONTROLS ==========*/
+    function controlSlider(isNext) {
+        sliderIndex = isNext ? (sliderIndex + 1) : (sliderIndex - 1)
+        showSlider(sliderIndex)
+    }
+    
+    /*========== SHOW SLIDE ==========*/
+    function showSlider(n) {
+        const heros = document.querySelectorAll('.hero__content')
+    
+        // Add limits
+        if (n > heros.length) sliderIndex = 1
+    
+        if (n < 1) sliderIndex = heros.length
+    
+        // Add fade class to all heros
+        heros.forEach((item) => item.classList.add('fade'))
+    
+        // Removed fade class to current hero
+        heros[sliderIndex-1].classList.remove('fade')
+    }
+    
+    let sliderIndex = 1
     showSlider(sliderIndex)
+    
+    // Add events to control slider
+    document.getElementById('btnPrevious').addEventListener('click', () => controlSlider(false))
+    document.getElementById('btnNext').addEventListener('click', () => controlSlider(true))
+    
+    // Slider movement auto
+    setInterval(() => {
+        controlSlider(true)
+    }, 5000)
 }
-
-/*========== SHOW SLIDE ==========*/
-function showSlider(n) {
-    const heros = document.querySelectorAll('.hero__content')
-
-    // Add limits
-    if (n > heros.length) sliderIndex = 1
-
-    if (n < 1) sliderIndex = heros.length
-
-    // Add fade class to all heros
-    heros.forEach((item) => item.classList.add('fade'))
-
-    // Removed fade class to current hero
-    heros[sliderIndex-1].classList.remove('fade')
-}
-
-let sliderIndex = 1
-showSlider(sliderIndex)
-
-// Add events to control slider
-document.getElementById('btnPrevious').addEventListener('click', () => controlSlider(false))
-document.getElementById('btnNext').addEventListener('click', () => controlSlider(true))
-
-// Slider movement auto
-setInterval(() => {
-    controlSlider(true)
-}, 5000)
 
 
 
