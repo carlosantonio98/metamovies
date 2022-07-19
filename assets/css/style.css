@@ -554,6 +554,14 @@ img {
         max-height: 300px;
     }
 
+    .movies__container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .movies__img {
+        height: 250px;
+    }
+
     .modal-detail {
         height: 50%;
     }
