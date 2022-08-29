@@ -8,7 +8,7 @@
 
     /*========== Colors ==========*/
     --first-color: #775bf1;
-    --first-color-alt: #afa4e2;
+    --first-color-alt: #a695f0;
     --title-color: #393939;
     --text-color: #707070;
     --text-color-light: #A6A6A6;
@@ -296,6 +296,39 @@ img {
 /* Show navbar desktop */
 .show {
     width: calc(var(--nav-width) + 156px);
+}
+
+
+
+/* Scroll top */
+.scrolltop {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background: rgba(119, 91, 241, .5);
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+}
+
+.scrolltop:hover {
+    background-color: var(--first-color-alt);
+}
+
+.scrolltop__icon {
+    font-size: 1.8rem;
+    color: var(--body-color);
+}
+
+/* Show scrolltop */
+.scroll-top {
+    visibility: visible;
+    bottom: 1.5rem;
 }
 
 
