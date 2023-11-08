@@ -27,52 +27,68 @@ git  clone  https://github.com/carlosantonio98/metamovies.git
 ## Preview 📸
 
 - Pagina principal
-![App Screenshot](https://i.imgur.com/bqHdjPe.png)
+
+    ![App Screenshot](https://i.imgur.com/bqHdjPe.png)
 
 - Pagina principal
-![App Screenshot](https://i.imgur.com/SaUlVD1.png)
+
+    ![App Screenshot](https://i.imgur.com/SaUlVD1.png)
 
 - Pagina de películas
-![App Screenshot](https://i.imgur.com/XTx06KK.png)
+    
+    ![App Screenshot](https://i.imgur.com/XTx06KK.png)
 
 - Pagina de películas
-![App Screenshot](https://i.imgur.com/XwhA1uF.png)
+
+    ![App Screenshot](https://i.imgur.com/XwhA1uF.png)
 
 - Pagina de series
-![App Screenshot](https://i.imgur.com/zCYoVVJ.png)
+
+    ![App Screenshot](https://i.imgur.com/zCYoVVJ.png)
 
 - Pagina de series
-![App Screenshot](https://i.imgur.com/sujexYp.png)
+
+    ![App Screenshot](https://i.imgur.com/sujexYp.png)
 
 - Pagina de animes
-![App Screenshot](https://i.imgur.com/XKzWZjw.png)
+
+    ![App Screenshot](https://i.imgur.com/XKzWZjw.png)
 
 - Pagina de animes
-![App Screenshot](https://i.imgur.com/ExPTcqS.png)
+    
+    ![App Screenshot](https://i.imgur.com/ExPTcqS.png)
 
 - Pagina de favoritos
-![App Screenshot](https://i.imgur.com/yRElTmN.png)
+    
+    ![App Screenshot](https://i.imgur.com/yRElTmN.png)
 
 - Navegación lateral
-![App Screenshot](https://i.imgur.com/IQsLOus.png)
+    
+    ![App Screenshot](https://i.imgur.com/IQsLOus.png)
 
 - Modal de detalles
-![App Screenshot](https://i.imgur.com/rRBEj5G.png)
+    
+    ![App Screenshot](https://i.imgur.com/rRBEj5G.png)
 
 - Pagina principal(móvil)
-![App Screenshot](https://i.imgur.com/tovOPa7.png)
+
+    ![App Screenshot](https://i.imgur.com/tovOPa7.png)
 
 - Navegación lateral(móvil)
-![App Screenshot](https://i.imgur.com/2adXrQy.png)
+
+    ![App Screenshot](https://i.imgur.com/2adXrQy.png)
 
 - Modal de detalles(móvil)
-![App Screenshot](https://i.imgur.com/OyEaix5.png)
+
+    ![App Screenshot](https://i.imgur.com/OyEaix5.png)
 
 - Modo oscuro
-![App Screenshot](https://i.imgur.com/g3jXBRa.png)
+
+    ![App Screenshot](https://i.imgur.com/g3jXBRa.png)
 
 - Modo oscuro(móvil)
-![App Screenshot](https://i.imgur.com/Tm35ZXn.png)
+
+    ![App Screenshot](https://i.imgur.com/Tm35ZXn.png)
 
 ## Autor 🖋️
 
